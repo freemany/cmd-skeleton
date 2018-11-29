@@ -1,0 +1,30 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+
+const cmd = require('commander');
+
+
+cmd
+    .version('0.1.0')
+    .description('Fake package manager')
+    .command('install [name]', 'install one or more packages').alias('i')
+    .command('clone [name]', 'install one or more packages').alias('c')
+    .command('microapp [action]', 'install one or more packages').alias('ma')
+    .parse(process.argv);
+// cmd
+//     .command('install [name]', 'install one or more packages')
+//     .option('-p, --peppers', 'Add peppers')
+//     // .action((cmd, options) => {
+//     //     console.log('exec "%s" using %s mode'.green, cmd);
+//     //
+//     // })
+//     .parse(process.argv);
+
+
+// if (cmd.peppers) console.log('  - peppers: ', cmd.peppers);
+// if (cmd.pineapple) console.log('  - pineapple');
+// if (cmd.bbqSauce) console.log('  - bbq');
+// console.log('  - %s cheese', cmd.cheese);
