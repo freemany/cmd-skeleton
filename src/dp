@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+
+const cmd = require('commander');
+
+cmd
+    .version('0.0.0')
+    .description('Deputy CLI')
+    .command('microapp [action]', 'Micro app CLI').alias('mc')
+    .parse(process.argv);
